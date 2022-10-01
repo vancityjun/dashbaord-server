@@ -1,0 +1,44 @@
+{
+  "name": "dashboard",
+  "version": "1.0.0",
+  "description": "dashboard server",
+  "main": "index.ts",
+  "scripts": {
+    "test": "jest --passWithNoTests",
+    "eject": "react-scripts eject",
+    "auto-fix": "npm-run-all -p auto-fix:*",
+    "auto-fix:eslint": "npx eslint --fix --cache ./",
+    "auto-fix:prettier": "npx prettier --write --cache ./",
+    "lint-check": "npm-run-all -p lint-check:*",
+    "lint-check:eslint": "npx eslint --cache ./",
+    "lint-check:prettier": "npx prettier  --check --cache ./",
+    "prepare": "husky install"
+  },
+  "keywords": [
+    "dashboard"
+  ],
+  "author": "Jun's coding clinic",
+  "license": "MIT",
+  "dependencies": {
+    "@prisma/client": "^4.3.1",
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.14",
+    "@types/node": "^18.7.18",
+    "@typescript-eslint/eslint-plugin": "^5.38.0",
+    "@typescript-eslint/parser": "^5.38.0",
+    "eslint": "^8.23.1",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "husky": "^8.0.1",
+    "jest": "^29.0.3",
+    "nodemon": "^2.0.20",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.7.1",
+    "prisma": "^4.3.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.8.3"
+  }
+}
